@@ -1,0 +1,13 @@
+{
+    "name": "remy/barebone-php-composer",
+    "description": "Set-up new PHP instances with PHPUnit & Composer built-in in an instant!",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Remy Kooistra",
+            "email": "remykooistra77@gmail.com"
+        }
+    ],
+    "require": {}
+}
