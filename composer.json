@@ -9,5 +9,7 @@
             "email": "remykooistra77@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+	"phpunit/phpunit": "7.2.4"
+    }
 }
