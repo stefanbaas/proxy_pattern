@@ -6,7 +6,7 @@ services:
       dockerfile: app.dockerfile
     working_dir: /var/www/application
     volumes:
-      - ./:/var/www/application
+      - ../.:/var/www/application
 
     environment:
       - "DB_PORT=3306"
