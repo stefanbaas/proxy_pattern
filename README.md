@@ -24,4 +24,4 @@ You can also run a docker environment in an instant by running the following com
 -- Nginx
 
 ### Suggestions?
-Got any suggestions that would be a good fit for the project? Just leave a suggestion :-).
+Got any suggestions that would be a good fit for the project? Just leave a suggestion in the issues section :-).
