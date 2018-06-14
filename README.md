@@ -22,3 +22,6 @@ You can also run a docker environment in an instant by running the following com
 -- PHP 7
 -- MySQL
 -- Nginx
+
+### Suggestions?
+Got any suggestions that would be a good fit for the project? Just leave a suggestion :-).
