@@ -19,12 +19,15 @@ You can also run a docker environment in an instant by running the following com
 Be sure to set the right permissions on the `storage/cache` directory. Your webuser needs to be able to write files into it for Blade template caching.
 
 ### Included in this repository are the following packages/software:
-- Docker
 - PHPUnit
 - Composer
--- PHP 7
--- MySQL
--- Nginx
+- Docker
+- Blade Template Engine (https://github.com/jenssegers/blade)
+
+#### Docker includes:
+- PHP 7
+- MySQL
+- Nginx
 
 ### Suggestions?
-Got any suggestions that would be a good fit for the project? Just leave a suggestion in the issues section :-).
+Got any suggestions that would be a good fit for the project? Just post a ticket in the issues section :-).
