@@ -1,5 +1,8 @@
 # IDE files
 .idea
 
+# Non-required files
+storage/cache/*
+
 # Composer-related
-/vendor/
+vendor/

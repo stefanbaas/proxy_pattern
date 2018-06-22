@@ -15,6 +15,9 @@ You can also run a docker environment in an instant by running the following com
 
 - `docker-compose up`
 
+### Additional instructions
+Be sure to set the right permissions on the `storage/cache` directory. Your webuser needs to be able to write files into it for Blade template caching.
+
 ### Included in this repository are the following packages/software:
 - Docker
 - PHPUnit

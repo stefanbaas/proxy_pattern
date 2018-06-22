@@ -16,6 +16,7 @@
         }
     ],
     "require": {
-	"phpunit/phpunit": "7.2.4"
+	"phpunit/phpunit": "7.2.4",
+        "jenssegers/blade": "^1.1"
     }
 }
