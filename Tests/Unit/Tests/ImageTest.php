@@ -32,4 +32,10 @@ class ImageTest extends TestCase
         $this->assertTrue(is_array($size));
         $this->assertEquals(2, count($size));
     }
+
+    public function testDisplayImage()
+    {
+        $image = $this->sut->displayImage();
+        $this->assertTrue((is_string($image) || is_null($image)));
+    }
 }

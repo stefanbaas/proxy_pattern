@@ -35,6 +35,7 @@ class ImageProxyTest extends TestCase
 
     public function testDisplayImage () : void
     {
-        $this->assertTrue(is_bool($this->sut->displayImage()));
+        $image = $this->sut->displayImage();
+        $this->assertTrue((is_string($image) || is_null($image)));
     }
 }

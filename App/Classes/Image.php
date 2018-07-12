@@ -30,9 +30,13 @@ class Image implements ImageContract
     public function displayImage()
     {
         if(!$this->image) {
-            return false;
+            return null;
         }
 
-        return imagejpeg($this->image);
+        ob_start();
+        imagejpeg($this->image);
+        $imageString = ob_get_clean();
+
+        return $imageString;
     }
 }
