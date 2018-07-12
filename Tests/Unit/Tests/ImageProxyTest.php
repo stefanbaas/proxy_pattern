@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use App\Contracts\ImageContract;
 use App\Proxies\ImageProxy;
 use PHPUnit\Framework\TestCase;
 
@@ -18,5 +19,10 @@ class ImageProxyTest extends TestCase
     public function testInstantiation () : void
     {
         $this->assertNotNull($this->sut);
+    }
+
+    public function testInstanceOf()
+    {
+        $this->assertInstanceOf(ImageContract::class, $this->sut);
     }
 }

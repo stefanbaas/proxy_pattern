@@ -3,6 +3,7 @@
 namespace Tests;
 
 use App\Classes\Image;
+use App\Contracts\ImageContract;
 use PHPUnit\Framework\TestCase;
 
 class ImageTest extends TestCase
@@ -18,6 +19,11 @@ class ImageTest extends TestCase
     public function testInstantiation () : void
     {
         $this->assertNotNull($this->sut);
+    }
+
+    public function testInstanceOf()
+    {
+        $this->assertInstanceOf(ImageContract::class, $this->sut);
     }
 
     public function testGetSize () : void
