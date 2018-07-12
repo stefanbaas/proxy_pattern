@@ -32,4 +32,9 @@ class ImageProxyTest extends TestCase
         $this->assertTrue(is_array($size));
         $this->assertEquals(2, count($size));
     }
+
+    public function testDisplayImage () : void
+    {
+        $this->assertTrue(is_bool($this->sut->displayImage()));
+    }
 }

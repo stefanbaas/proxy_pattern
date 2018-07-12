@@ -23,7 +23,8 @@ class ImageProxy implements ImageContract
 
     public function displayImage()
     {
-        // TODO: Implement displayImage() method.
+        $this->init();
+        return $this->image->displayImage();
     }
 
     private function init(){
