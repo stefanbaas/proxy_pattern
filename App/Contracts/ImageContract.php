@@ -2,7 +2,7 @@
 
 namespace App\Contracts;
 
-Interface ImageInterface {
+Interface ImageContract {
     public function getSize();
     public function displayImage();
 }

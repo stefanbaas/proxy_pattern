@@ -19,4 +19,9 @@ class ImageTest extends TestCase
     {
         $this->assertNotNull($this->sut);
     }
+
+    public function testGetSize () : void
+    {
+        $this->assertTrue(is_array($this->sut->getSize()));
+    }
 }
