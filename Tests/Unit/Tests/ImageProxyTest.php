@@ -25,4 +25,11 @@ class ImageProxyTest extends TestCase
     {
         $this->assertInstanceOf(ImageContract::class, $this->sut);
     }
+
+    public function testGetSize () : void
+    {
+        $size = $this->sut->getSize();
+        $this->assertTrue(is_array($size));
+        $this->assertEquals(2, count($size));
+    }
 }
