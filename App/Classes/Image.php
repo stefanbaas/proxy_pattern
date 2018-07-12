@@ -6,14 +6,33 @@ use App\Contracts\ImageContract;
 
 class Image implements ImageContract
 {
+    private $image;
+
+    public function __construct($path)
+    {
+        if(file_exists($path)) {
+            $this->image = imagecreatefromjpeg($path);
+        }
+    }
 
     public function getSize()
     {
-        return [0,0];
+        if(!$this->image){
+            return [0,0];
+        }
+
+        return [
+            imagesx($this->image),
+            imagesy($this->image)
+        ];
     }
 
     public function displayImage()
     {
-        // TODO: Implement displayImage() method.
+        if(!$this->image) {
+            return false;
+        }
+
+        return imagejpeg($this->image);
     }
 }
