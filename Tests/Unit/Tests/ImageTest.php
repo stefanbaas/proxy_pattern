@@ -22,6 +22,8 @@ class ImageTest extends TestCase
 
     public function testGetSize () : void
     {
-        $this->assertTrue(is_array($this->sut->getSize()));
+        $size = $this->sut->getSize();
+        $this->assertTrue(is_array($size));
+        $this->assertEquals(2, count($size));
     }
 }

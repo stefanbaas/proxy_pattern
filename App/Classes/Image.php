@@ -9,7 +9,7 @@ class Image implements ImageContract
 
     public function getSize()
     {
-        return [];
+        return [0,0];
     }
 
     public function displayImage()
